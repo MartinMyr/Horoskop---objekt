@@ -1,6 +1,6 @@
 <?php
     include 'include/header.php';
-    include 'function/functions.php';
+    include 'function/myhoroscope.php';
 ?>
 
 
