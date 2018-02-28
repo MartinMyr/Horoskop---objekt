@@ -1,12 +1,23 @@
 <?php
 
     class Person{
-        function __construct($name, $lastname, $socialnumber){
-            $this->name = $name;
+        function __construct($firstname, $lastname, $date){
+            $this->date = $date;
+            $this->firstname = $firstname;
             $this->lastname = $lastname;
-            $this->socialnumber = $socialnumber;
+            if($date == 0324){
+                $this->horoscope = "väduren";
+            }
 
            
-
+           
         }
+        
+        public function printSign(){
+
+            return $this->horoscope;
+        }
+            
+
     }
+    

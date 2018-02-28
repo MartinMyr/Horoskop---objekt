@@ -1,18 +1,17 @@
 <?php
     include 'include/header.php';
     include 'function/class.php';
+    include 'function/data.php';
 ?>
 
 
 
 
 <?php
-    print_r($_COOKIE["socialnumber"][4]);
-    print_r($_COOKIE["socialnumber"][5]);
-    print_r($_COOKIE["socialnumber"][6]);
-    print_r($_COOKIE["socialnumber"][7]);
+   // print_r(substr($_COOKIE["socialnumber"], -4, 4));
+    $person = new Person($_COOKIE["name"], $_COOKIE["lastname"], substr($_COOKIE["socialnumber"], -4, 4));
     
-19930324
+    $person->printSign();
 ?>
 
 
