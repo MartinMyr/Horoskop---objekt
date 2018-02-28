@@ -11,7 +11,8 @@
    // print_r(substr($_COOKIE["socialnumber"], -4, 4));
     $person = new Person($_COOKIE["name"], $_COOKIE["lastname"], substr($_COOKIE["socialnumber"], -4, 4));
     
-    $person->printSign();
+    $person-> printSign();
+   var_dump($date);
 ?>
 
 
