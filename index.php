@@ -14,7 +14,7 @@
     <h3>Efternamn</h3>
     <input name = "lastname" type = "text"/>
     <h3>Person Nr</h3>
-    <input name = "socialnumber" type = "number" placeholder = "19XX-XX-XX"/></br></br>
+    <input name = "socialnumber" type = "number" placeholder = "YYYYMMDD"/></br></br>
     <button type = "submit">Skicka</button>
 
 </form>
