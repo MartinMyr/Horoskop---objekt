@@ -1,5 +1,5 @@
 <?php
-    if (isset($_COOKIE["socialnumber"]) == 0){
+    if (isset($_COOKIE["horoskopify"]) == false){
         header("location: index.php ");
     }
 
@@ -14,8 +14,8 @@
     <div class = "horoscope">
 
 <?php
-  
-    $person = new Person($_COOKIE["name"], $_COOKIE["lastname"], substr($_COOKIE["socialnumber"], -4, 4));
+    $horoscopeArray = unserialize($_COOKIE["horoskopify"]);
+    $person = new Person($horoscopeArray["name"], $horoscopeArray["lastname"], substr($horoscopeArray["socialnumber"], -4, 4));
 
     
 

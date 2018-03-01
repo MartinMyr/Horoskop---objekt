@@ -1,11 +1,11 @@
 <?php
-    if (isset($_COOKIE["socialnumber"]) == 1){
+ 
+    if (isset($_COOKIE["horoskopify"]) == true){
         header("location: myhoroscope.php ");
     }
 
     include 'function/data.php';
     include 'include/header.php';
-    
 ?>
 
 <form  method ="post">
@@ -21,7 +21,7 @@
 
 
 <?php
-
+    
 
 
 ?>
